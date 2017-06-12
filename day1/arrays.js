@@ -38,8 +38,15 @@ array.forEach(function(val,index){
 });
 
 var new_array = [1,2,3,4,5].map(function(val,index){
-    if(val%2) return val;
+    return val % 2 == 0;
 });
 console.log();
-console.log('Map:');
-console.log(new_array)
+console.log('Map ODDS:');
+console.log(new_array);
+
+var new_array = [1,2,3,4,5].map(function(val,index){
+    return val++;
+});
+console.log();
+console.log('Add 2:');
+console.log(new_array);
