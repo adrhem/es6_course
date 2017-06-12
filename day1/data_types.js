@@ -16,6 +16,11 @@ var my_function = function(int){
     int = int || 2;
     return int;
 }
+
+function  my_function2(){
+    var a = 2017;
+    return str + a;
+}
 console.log("Test console");
 console.log("=============");
 console.log(PI, str, PI, boolean);
@@ -24,6 +29,7 @@ console.log(arr);
 console.log(obj);
 console.log(my_function());
 console.log(my_function(PI));
+console.log(my_function2());
 
 console.log();
 console.log("Expresions");
