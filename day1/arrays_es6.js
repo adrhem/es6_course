@@ -1,48 +1,29 @@
-var integer = 10;
-var str = "Hello World";
-var PI = 3.1415;
-var boolean = false;
-var arr = [10,12,13,'Hello',10.6,true];
-var obj = {
-    PI: PI,
-    str: str,
-    PI: PI,
-    boolean: boolean,
-    arr: arr,
-    obj: {},
-};
+var array = [1,2,3,4,5,6,7,8,9,10];
 
-var my_function = function(int){
-    int = int || 2;
-    return int;
-}
-console.log("Test console");
-console.log("=============");
-console.log(PI, str, PI, boolean);
-console.log('This is concat: ' + str + ' ' + PI);
-console.log(arr);
-console.log(obj);
-console.log(my_function());
-console.log(my_function(PI));
+var new_array = array.filter(val => {
+    return val % 2 == 0;
+});
+console.log();
+console.log('ODDS:');
+console.log(new_array);
 
 console.log();
-console.log("Expresions");
-console.log("=============");
-console.log(PI == '3.1415');
-console.log(PI === '3.1415');
-console.log(PI === 3.1415);
+console.log('Reverse:');
+console.log(new_array.reverse());
 
 console.log();
-console.log("Typeof");
-console.log("=============");
-console.log(typeof integer);
-console.log(typeof str);
-console.log(typeof PI);
-console.log(typeof boolean);
-console.log(typeof arr);
-console.log(typeof obj);
-console.log(typeof my_function);
-console.log(typeof var_not_defined);
-console.log(typeof null);
-console.log(typeof my_function == 'function');
+console.log('Sort:');
+new_array.sort()
+console.log(new_array);
 
+console.log();
+console.log('Sort custom:');
+new_array.sort((a,b)=>{ return Number(a) > Number(b) })
+console.log(new_array);
+
+var new_array = array.map((val,index) => {
+    return val++;
+});
+console.log();
+console.log('Add 2:');
+console.log(new_array);

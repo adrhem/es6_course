@@ -1,22 +1,71 @@
+//Javascript Object Notation
+//https://maps.googleapis.com/maps/api/geocode/json?address=CUCEI
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Blvd. Marcelino García Barragán",
+               "short_name" : "Blvd. Marcelino García Barragán",
+               "types" : [ "premise" ]
+            },
+            {
+               "long_name" : "Olimpica",
+               "short_name" : "Olimpica",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Ciudad Universitaria",
+               "short_name" : "Ciudad Universitaria",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Olímpica",
+               "short_name" : "Olímpica",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Guadalajara",
+               "short_name" : "Guadalajara",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Jalisco",
+               "short_name" : "Jal.",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Mexico",
+               "short_name" : "MX",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "44430",
+               "short_name" : "44430",
+               "types" : [ "postal_code" ]
             }
-        }
-    }
+         ],
+         "formatted_address" : "Blvd. Marcelino García Barragán, Olimpica, Ciudad Universitaria, Olímpica, 44430 Guadalajara, Jal., Mexico",
+         "geometry" : {
+            "location" : {
+               "lat" : 20.6539184,
+               "lng" : -103.3258098
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 20.6552673802915,
+                  "lng" : -103.3244608197085
+               },
+               "southwest" : {
+                  "lat" : 20.6525694197085,
+                  "lng" : -103.3271587802915
+               }
+            }
+         },
+         "place_id" : "ChIJDai7mzqyKIQRkOsvWf23zdo",
+         "types" : [ "establishment", "point_of_interest", "university" ]
+      }
+   ],
+   "status" : "OK"
 }
