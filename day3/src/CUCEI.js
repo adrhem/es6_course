@@ -1,4 +1,5 @@
 import React from 'react';
+import './CUCEI.css';
 
 export default class CUCEI extends React.Component {
     static style = {
@@ -15,9 +16,13 @@ export default class CUCEI extends React.Component {
         padding: 6,
     };
 
+    handleClick = () => {
+        alert("We are the best!");
+    };
+
     render() {
         return (
-            <div style={CUCEI.style}>
+            <div className="cucei" onClick={this.handleClick} style={CUCEI.style}>
                 {this.props.text}
             </div>
         );
