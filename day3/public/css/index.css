@@ -1,0 +1,20 @@
+body {
+    font-family: 'Roboto', 'Sans Serif';
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #03A9F4;
+    color:white;
+    padding: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+} 
+
+#content{
+    color: #111;
+    padding: 10px 0;
+    height: 400px;
+    width: 100%;
+}
