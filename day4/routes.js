@@ -42,7 +42,7 @@ module.exports = {
             connection.query({
                 sql:    `SELECT * 
                         FROM users 
-                        WHERE first_name LIKE ?
+                        WHERE first_name herokuLIKE ?
                         OR last_name LIKE ?
                         OR email LIKE ?`,
                 timeout: 40000, // 40s
